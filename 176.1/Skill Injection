@@ -13,10 +13,10 @@ alloc(delay,8)
 delay:
 dw 00
 
-022CD415: //[1st addy]
+0240D1F5: //[1st addy]
 db 90 90 90 90 90 90
 
-022CD421: //[2nd addy]
+0240D205: //[2nd addy]
 db 90 90 90 90 90 90
 
 022CD40E: //[3rd addy]
@@ -47,10 +47,10 @@ jmp 022CD64D //[7th addy] 81 BE ? ? ? ? E2 FE 7E 01 8B CE 75 ? 6A 00 6A 00 6A 04
 dw 9090
 
 [Disable]
-022CD415: //[1st addy] 0F 84 ? ? ? ? 2B 9E ? ? ? ? 0F 88 ? ? ? ? 8B 0D ? ? ? ? 85 C9 74 ? 8B ? ? 83 ? ? 68 ? ? ? ? FF 50
+0240D1F5: //[1st addy] 0F 84 ? ? ? ? 2B 9E ? ? ? ? 0F 88 ? ? ? ? 8B 0D ? ? ? ? 85 C9 74 ? 8B ? ? 83 ? ? 68 ? ? ? ? FF 50
 db 0F 84 1F 03 00 00
 
-022CD421: //[2nd addy] JS Below first addy^
+0240D205: //[2nd addy] JS Below first addy^
 db 0F 88 13 03 00 00
 
 022CD40E: //[3rd addy] cmp dword ptr above first addy^^
